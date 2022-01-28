@@ -1,0 +1,16 @@
+.searchLine{
+    background-color: #F0F2F5;
+    border-radius: 15px;
+    padding: 3px 5px;
+    max-width: 200px;
+    margin:10px auto;
+}
+
+.linkStyle{
+    color:darkgoldenrod
+}
+.linkStyle:hover{
+    color:darkgoldenrod;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
