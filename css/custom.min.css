@@ -35,8 +35,15 @@
     line-height: 32px;
 }
 
+#howToOrder img{
+    max-width: 600px;
+}
+
 @media (max-width:768px){
     #hero-area h1{
         font-size:33px;
+    }
+    #howToOrder img{
+        max-width: 375px;
     }
 }
