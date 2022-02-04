@@ -1,11 +1,5 @@
-.searchLine{
-    background-color: #F0F2F5;
-    border-radius: 5px;
-    padding: 3px 0 3px 5px;
-    max-width: 210px;
-    margin:10px auto;
-}
 
+/* 共用 */
 .linkStyle{
     color:darkgoldenrod
 }
@@ -13,6 +7,27 @@
     color:darkgoldenrod;
     font-weight: bold;
     transition-duration: 0.2s;
+}
+
+/* 加入LINE */
+.searchLine{
+    background-color: #F0F2F5;
+    border-radius: 5px;
+    padding: 3px 0 3px 5px;
+    max-width: 210px;
+    margin:10px auto;
+}
+/* 首頁Slider */
+#hero-area{
+    background-image: url("https://chensayha.github.io/yesfoodeveryday/images/slider.jpg");
+}
+@media (max-width:768px){
+    #hero-area{
+        background-image: url("https://chensayha.github.io/yesfoodeveryday/images/sliderM.jpg");
+    }
+    #hero-area h1{
+        font-size:33px;
+    }
 }
 
 /* 最新菜單圖片 */
@@ -40,9 +55,6 @@
 }
 
 @media (max-width:768px){
-    #hero-area h1{
-        font-size:33px;
-    }
     #howToOrder img{
         max-width: 375px;
     }
