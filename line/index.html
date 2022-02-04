@@ -95,7 +95,7 @@
           <h2>加入LINE</h2>
           <ol class="breadcrumb list-inline text-center">
             <li class="list-inline-item">
-              <a href="../index.html">
+              <a href="https://chensayha.github.io/yesfoodeveryday/">
                 <i class="ion-ios-home"></i>
                 Home &nbsp; &nbsp;/
               </a>
@@ -118,7 +118,11 @@
           <div>掃描QrCode</div>
           <a href="https://page.line.me/860nqjxr" class="d-block linkStyle">🔗點選連結加入好友</a>
           <img src="../images/line/line.jpg" alt="add-line">
-          <div class="searchLine">搜尋：@860nqjxr</div>
+          <div class="searchLine">搜尋：
+            <span id="copy">@860nqjxr</span>
+            <button type="button" onclick="copyEvent('copy')" class="btn btn-secondary btn-sm ml-2">複製</button>
+          </div>
+          
         </div>
         
       </div>
@@ -193,8 +197,10 @@
 <!-- Fancybox -->
 <script src="https://chensayha.github.io/yesfoodeveryday/plugins/facncybox/jquery.fancybox.js"></script>
 <!-- template main js -->
-
 <script src="https://chensayha.github.io/yesfoodeveryday/js/script.min.js"></script>
+<!-- sweetAlert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <!-- google analitycs -->
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -210,6 +216,16 @@
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
   ga('create', 'Your ID', 'auto');
   ga('send', 'pageview');
-</script></body>
 
+  // 複製LINEID
+  function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+        window.swal("複製成功","已成功複製LINE ID，可直接進行貼上囉！","success")
+    }
+
+</script>
+</body>
 </html>
