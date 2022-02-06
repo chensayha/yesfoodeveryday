@@ -19,12 +19,12 @@
 }
 /* 首頁Slider */
 #hero-area{
-    background-image: url("/images/slider.jpg");
+    background-image: url("https://chensayha.github.io/yesfoodeveryday/images/slider.jpg");
     background-position: 50% 37%;
 }
 @media (max-width:768px){
     #hero-area{
-        background-image: url("/images/sliderM.jpg");
+        background-image: url("https://chensayha.github.io/yesfoodeveryday//images/sliderM.jpg");
     }
     #hero-area h1{
         font-size:33px;
