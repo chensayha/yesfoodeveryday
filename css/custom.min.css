@@ -9,6 +9,16 @@
     transition-duration: 0.2s;
 }
 
+/* 選單的手機版畫面 */
+#navigation .navbar-nav{
+    margin-top: 10px;
+}
+
+#navigation .nav-item{
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
 /* 加入LINE */
 .searchLine{
     background-color: #F0F2F5;
@@ -36,6 +46,7 @@
     max-width: 600px;
 }
 .menuText{
+    line-height: 32px;
     font-size: 18px;;
     color:#212121;
 }
