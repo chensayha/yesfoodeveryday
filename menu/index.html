@@ -30,6 +30,8 @@
   <!-- template main css file -->
   <link rel="stylesheet" href="../css/style.min.css" media="screen">
   <link rel="stylesheet" href="../css/custom.min.css" media="screen">
+  <!-- ekko-lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
   
 </head><body><section class="top-bar animated-header">
 	<div class="container">
@@ -99,10 +101,42 @@
 
 <section id="blog-full-width">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				
+    <div class="section-heading">
+			<h1 class="title wow fadeInDown" data-wow-delay=".3s">1/24(一)最新菜單</h1>
+			<p class="wow fadeInDown" data-wow-delay=".5s">每2週換一次菜單，怎麼吃都吃不膩❤</p>
+		</div>
+    <div class="row">
+			<div class="col-sm-6">
+				<div class="" data-wow-delay=".3s" data-wow-duration="500ms">
+					<a href="../images/menu/正方形.jpg" data-toggle="lightbox" data-title="2022最新菜單">
+						<img src="../images/menu/正方形.jpg" class="img-fluid">
+					</a>
+				</div>
 			</div>
+			<div class="col-sm-6">
+				<div class="fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+					<p class="menuText mt-4 mt-md-0">
+						XO醬炒飯餐盒<br/>
+						✨椒鹽雞丁 $100<br/>
+						-<br/>
+						健康餐盒(紅藜麥飯)<br/>
+						✨胡麻醬雞胸 $110<br/>
+						✨蜜汁烤雞腿 $110<br/>
+						✨挪威烤鯖魚 $110<br/>
+						✨泡菜豬里肌 $100<br/>
+						✨岩燒豬排 $100<br/>
+						+10元換炒飯<br/>
+						-<br/>
+						隱藏版菜單<br/>
+						✨舒肥海鹽板腱牛排 $160<br/>
+						✨蜜汁阿根廷大魷魚 $160<br/>
+						-<br/>
+						✅每日選用新鮮蔬菜<br/>
+						✅每兩週換一次菜單<br/>
+					</p>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 </section>
@@ -118,7 +152,7 @@
             data-wow-duration="500ms">我要訂餐</h1>
             <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
               不論是外送，或是自取點取餐，都可以使用LINE詢問哦！我們也提供企業團訂及客製化，歡迎與我們聯絡！</p>
-            <a href="https://page.line.me/860nqjxr" class="btn btn-default btn-contact wow fadeInDown"
+            <a href="../line/index.html" class="btn btn-default btn-contact wow fadeInDown"
               data-wow-delay=".7s" data-wow-duration="500ms">加入LINE</a>
         </div>
       </div>
@@ -135,24 +169,19 @@
       <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
         <p class="copyright">Copyright:
           <span>
-            <script>
-              document.write(new Date().getFullYear())
-            </script>
-          </span> Design and Developed by
-          <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
-          <br> Get More Bootstrap Template From Our
-          <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          </span> Design and Developed by 前端菜鳥女友
         </p>
-      </div>
-      <div class="col-md-4 col-12">
-        <!-- Social Media -->
-        <ul class="social text-center text-md-right text-lg-right">
-          
-          <li><a href="https://www.facebook.com/yesfoodeveryday"><i class="ion-social-facebook"></i></a></li>
-          
-          <li><a href="https://www.instagram.com/yesfoodeveryday/?fbclid=IwAR3yS-MR_rZ8_6Q_IIZXPlsyzKZDVu-Jope7zJjcpC6dGFEswzHocHLmAZs"><i class="ion-social-instagram"></i></a></li>
-          
-        </ul>
+        </div>
+        <div class="col-md-4 col-12">
+          <!-- Social Media -->
+          <ul class="social text-center text-md-right text-lg-right">
+            <li><a href="https://www.facebook.com/yesfoodeveryday"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/yesfoodeveryday/?fbclid=IwAR3yS-MR_rZ8_6Q_IIZXPlsyzKZDVu-Jope7zJjcpC6dGFEswzHocHLmAZs"><i class="ion-social-instagram"></i></a></li>
+            <li><a href="line/index.html"><i class="ion-chatbox-working"></i></a></li>
+          </ul>
       </div>
     </div>
   </div>
@@ -172,8 +201,9 @@
 <!-- Fancybox -->
 <script src="../plugins/facncybox/jquery.fancybox.js"></script>
 <!-- template main js -->
-
 <script src="../js/script.min.js"></script>
+<!-- ekko-lightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 <!-- google analitycs -->
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -189,6 +219,11 @@
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
   ga('create', 'Your ID', 'auto');
   ga('send', 'pageview');
+  //   燈箱效果
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
 </script></body>
 
 </html>

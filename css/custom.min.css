@@ -8,6 +8,12 @@
     font-weight: bold;
     transition-duration: 0.2s;
 }
+.colorOrange{
+    color:#F29701;
+}
+.bgGray{
+    background-color: #F8F9FA;
+}
 
 /* 選單的手機版畫面 */
 #navigation .navbar-nav{
@@ -49,6 +55,8 @@
     line-height: 32px;
     font-size: 18px;;
     color:#212121;
+    font-family: 微軟正黑體;
+    font-weight: 400;
 }
 
 /* 如何訂餐 */
@@ -60,6 +68,8 @@
     color:#212121;
     font-size: 18px;
     line-height: 32px;
+    font-family: 微軟正黑體;
+    font-weight: 400;
 }
 
 #howToOrder img{
