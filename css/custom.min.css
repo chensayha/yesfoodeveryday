@@ -11,9 +11,43 @@
 .colorOrange{
     color:#F29701;
 }
+
+.btnOrange{
+    background-color:#F29701;
+    color:white;
+}
+.btnOrange:hover{
+    background-color:#DC6E0D;
+    color:white;
+    font-weight: bold;
+}
+
+.yesfoodBtn{
+    border: 2px solid #113C3B;
+    color: #113C3B;
+    padding: 10px 25px;
+    background-color: #FFD43B;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow:3px 3px 0px rgb(13 59 57) ;
+}
+
+.yesfoodBtn:hover{
+    background-color: #E79214;
+    transition-duration: 0.5s;
+    color: #113C3B;
+}
+
+.yesfoodBtn.light{
+    border: 2px solid white;
+    box-shadow:3px 3px 0px rgb(255 255 255) ;
+}
+
 .bgGray{
     background-color: #F8F9FA;
 }
+
+
 
 /* 選單的手機版畫面 */
 #navigation .navbar-nav{
@@ -47,6 +81,12 @@
     }
 }
 
+/* 關於我們 */
+#aboutUs{
+    background-color: #FCFCFC;
+    padding: 20px 0;
+}
+
 /* 最新菜單圖片 */
 .menuImg{
     max-width: 600px;
@@ -54,7 +94,7 @@
 .menuText{
     line-height: 32px;
     font-size: 18px;;
-    color:#212121;
+    color:rgb(63, 63, 63);
     font-family: 微軟正黑體;
     font-weight: 400;
 }
@@ -65,7 +105,7 @@
 }
 
 #howToOrder p{
-    color:#212121;
+    color:rgb(63, 63, 63);
     font-size: 18px;
     line-height: 32px;
     font-family: 微軟正黑體;
