@@ -213,6 +213,13 @@
 					</p>
 				</div>
 			</div>
+      <div class="col-sm-12 col-md-6">
+        <div class="" data-wow-delay=".3s" data-wow-duration="500ms">
+					<a href="../images/delivery/外送滿千折百.jpg" data-toggle="lightbox" data-title="2022最新菜單">
+						<img src="../images/delivery/外送滿千折百.jpg" class="img-fluid">
+					</a>
+				</div>
+      </div>
 		</div>
 	</div>
 </section>
@@ -295,6 +302,12 @@
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
   ga('create', 'UA-220352590-1', 'auto');
   ga('send', 'pageview');
+
+  //燈箱效果
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	});
 </script></body>
 
 </html>
